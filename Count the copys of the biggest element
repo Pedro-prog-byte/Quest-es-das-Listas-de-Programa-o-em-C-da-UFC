@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define N 10
+
+int L[N]={5,12,3,12,8,5,5,10,3,12,10}
+
+int main (){
+int i, M, cont = 0;
+
+//First stage: find the biggest number
+M = L[0];
+for (i = 0; i < N; i++){
+  if (L[i] > M){
+    M = L[i];}}
+
+//Second stage: find the number of occurrences
+for (i=0; i<N; i++){
+  if (L[i] == M){
+    cont++;}}
+
+printf("The number of copys of the biggest element is "%d", cont);}
