@@ -14,4 +14,4 @@ for (i=1; i<N; i++){
     M = L[i];
     posM = i;}}
 
-print ("The biggest number is "%d", M);}
+print ("The biggest number is "%d" who is in the "%d" position, M, posM+1);}
