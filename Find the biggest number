@@ -5,11 +5,13 @@
 int L[N]={17,4,10,21,19,8,14,20,16,9};
 
 int main (){
-int i, M;
+int i, M, posM;
 
 M = L[0];
+posM = 0;
 for (i=1; i<N; i++){
   if (L[i] > M){
-    M = L[i];}}
+    M = L[i];
+    posM = i;}}
 
 print ("The biggest number is "%d", M);}
